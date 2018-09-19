@@ -31,7 +31,8 @@ public class TennisGame {
 		} 		
 	}
 	
-	public void player1Scored() throws TennisGameException {
+	public void player1Scored() throws TennisGameException
+{
 		if (gameEnded) {
 			throw new TennisGameException();
 		}
@@ -86,6 +87,6 @@ public class TennisGame {
 			if (player2Points > 4 && player2Points - player1Points == 1)
 				return "player2 has advantage";							
 			
-			return  player2Score + " - " + player1Score ;
+			return  player1Score + " - " + player2Score ;
 	}
 }
